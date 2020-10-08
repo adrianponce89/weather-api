@@ -1,0 +1,23 @@
+{
+  "name": "weather-api",
+  "version": "1.0.0",
+  "description": "API for weather app",
+  "main": "src/start.js",
+  "scripts": {
+    "start": "node src/start.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrianponce89/weather-api.git"
+  },
+  "author": "Adrian Ponce <adrian.ponce.89@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adrianponce89/weather-api/issues"
+  },
+  "homepage": "https://github.com/adrianponce89/weather-api#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
