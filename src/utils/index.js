@@ -29,6 +29,21 @@
 //   dt_txt: '2020-10-09 15:00:00',
 // };
 
+const weekDays = [
+  'Domingo',
+  'Lunes',
+  'Martes',
+  'Miércoles',
+  'Jueves',
+  'Viernes',
+  'Sábado',
+];
+
+const getWeekDay = (str) => {
+  const date = new Date(str);
+  return weekDays[date.getDay()];
+};
+
 module.exports = {
   convert3HourForecastToDaily: (list) => {
     const daily = [];
@@ -64,6 +79,7 @@ module.exports = {
         },
         weather,
         dt_txt,
+        week_day: getWeekDay(dt_txt),
       };
     }
 
